@@ -1,10 +1,12 @@
+//program to obtain the sum of rows and columns of a matrix
+// Sat June 01 2024
 import java.util.Scanner;
 
 
-public class prac {
+public class sum_of_rows_columns_matrix {
     public static void main(String[] args) {
 
-        Scanner mat = new Scanner(System.in);
+        try (Scanner mat = new Scanner(System.in)){
         System.out.print("Enter the number of rows for matrix : ");
         int row = mat.nextInt();
         System.out.print("Enter the number of columns for matrix : ");
@@ -22,6 +24,11 @@ public class prac {
             }
             System.out.println();
         }
+
+
+        // MAIN CODE
+
+
 
         for (int i = 0; i < matrix.length; i++) {
             int rowSum = 0;
@@ -41,6 +48,8 @@ public class prac {
         }
 
         mat.close();
+
+    }
 
     }
     

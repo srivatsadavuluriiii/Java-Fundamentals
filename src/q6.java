@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 public class q6 {
     public static void main(String[] args) {
@@ -25,3 +25,5 @@ public class q6 {
     }
     }
 }
+
+*/

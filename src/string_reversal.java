@@ -1,8 +1,11 @@
+//java program to reverse a string
+// Sat June 01 2024
+
 import java.util.Scanner;
 
-public class q5 {
+public class string_reversal {
     public static void main(String[] args) {
-        Scanner obj = new Scanner(System.in);
+        try(Scanner obj = new Scanner(System.in)){
         System.out.print("Enter a string : ");
         String str = obj.next();
         obj.close();
@@ -12,7 +15,7 @@ public class q5 {
             rev += str.charAt(i);
         }
         System.out.println("Reversed String : " + rev);
-
+        }
     }
 
 }

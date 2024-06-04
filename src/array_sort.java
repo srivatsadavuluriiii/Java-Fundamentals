@@ -1,9 +1,11 @@
+//java program to sort an array
+// Sat June 01 2024
+
 import java.util.Scanner;
 
-
-public class Sorting_array {
+public class array_sort {
     public static void main(String[] args) {
-        Scanner object = new Scanner(System.in);
+        try(Scanner object = new Scanner(System.in)){
         System.out.print("Enter the number of elements in the array : ");
 
         int[] arr = {1,2,3,8,7,5,6,4};
@@ -31,6 +33,8 @@ public class Sorting_array {
 
 
         object.close();
+
+    }
         
 
 

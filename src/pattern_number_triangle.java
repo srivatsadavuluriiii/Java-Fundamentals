@@ -1,8 +1,11 @@
+//java program to print number triangle pattern
+// Sat June 01 2024
+
 import java.util.Scanner;
 
-public class patterns {
+public class pattern_number_triangle {
     public static void main(String[] args) {
-        Scanner obj = new Scanner(System.in);
+        try(Scanner obj = new Scanner(System.in)){
         System.out.print("Enter the no. of rows : ");
         int num = obj.nextInt();
 
@@ -16,6 +19,7 @@ public class patterns {
         }
 
         obj.close();
+    }
         
     }
     

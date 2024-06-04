@@ -1,8 +1,12 @@
+//java program to display and perform operations on matrices
+// Sat June 01 2024
+
+
 import java.util.Scanner;
-public class Matrix {
+public class matrix_display_and_operations {
     public static void main(String[] args) {
 
-        Scanner mata = new Scanner(System.in);
+        try(Scanner mata = new Scanner(System.in)){
         System.out.print("Enter the number of rows for matrix 1 : ");
         int row1 = mata.nextInt();
         System.out.print("Enter the number of columns for matrix 1 : ");
@@ -19,8 +23,9 @@ public class Matrix {
             }
             System.out.println();
         }
+    
 
-        Scanner matb = new Scanner(System.in);
+        try(Scanner matb = new Scanner(System.in)){
         System.out.print("Enter the number of rows for matrix 2 : ");
         int row2 = matb.nextInt();
         System.out.print("Enter the number of columns for matrix 2 : ");
@@ -38,6 +43,8 @@ public class Matrix {
             }
             System.out.println();
         }
+
+    
 
         System.out.println();
         // add
@@ -73,6 +80,9 @@ public class Matrix {
 
         mata.close();
         matb.close();
+
+    }
+}
         
 
     }

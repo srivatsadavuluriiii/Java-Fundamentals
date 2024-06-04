@@ -1,6 +1,10 @@
+//Basic java testing
+// Sat June 01 2024
+
+
 import java.util.Scanner;
 
-public class Main {
+public class basic {
     public static void main(String[] args) {
         int a = 100;
         int b = 200;
@@ -26,7 +30,7 @@ public class Main {
         System.out.printf("value of b after swap = %d\n", b);
 
         //even or odd
-        Scanner sc = new Scanner(System.in);
+        try(Scanner sc = new Scanner(System.in)) {
         System.out.println("Enter number : ");
         int num = sc.nextInt();
 
@@ -35,12 +39,10 @@ public class Main {
         } else {
             System.out.println("number is odd");
         }
-
-        sc.close();
-
+    }
 
         //palindrome
-        Scanner palindrome = new Scanner(System.in);
+        try(Scanner palindrome = new Scanner(System.in)) {
         System.out.println("Enter palindrome number : ");
         int number = palindrome.nextInt();
         int rem,sum=0;
@@ -58,9 +60,8 @@ public class Main {
         else {
             System.out.println("Number is not a palindrome");
         }
-
-        palindrome.close();
         // find the greatest coomon divisor of two numbers
+    }
     }
 
 }
