@@ -9,7 +9,7 @@ public class array_sort {
         System.out.print("Enter the number of elements in the array : ");
 
         int[] arr = {1,2,3,8,7,5,6,4};
-        int temp = 0;
+        int temp;
         System.out.println("Unsorted Array");
         System.out.print("{");
         for (int p : arr) { System.out.print(p + ", ");}System.out.println("}");
