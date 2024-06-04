@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class armstrong_number_checker {
     public static void main(String[] args) {
-        Scanner num = new Scanner(System.in);
+        try(Scanner num = new Scanner(System.in)){
         System.out.println("Enter a number: ");
         int n = num.nextInt();
         int sum = 0, temp,rem;
@@ -29,6 +29,7 @@ public class armstrong_number_checker {
         }
 
         num.close();
+    }
 
     }
 }
