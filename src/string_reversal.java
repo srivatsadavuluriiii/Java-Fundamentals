@@ -17,5 +17,4 @@ public class string_reversal {
         System.out.println("Reversed String : " + rev);
         }
     }
-
 }

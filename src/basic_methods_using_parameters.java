@@ -1,7 +1,6 @@
 //java program to add two numbers using methods and parameters
 // Tue June 04 2024
 
-
 import java.util.Scanner;
 
 class adder {
@@ -19,10 +18,8 @@ public class basic_methods_using_parameters {
         System.out.print("Enter number 2 : ");
         int num2 = object.nextInt();
 
-
         adder a = new adder();
         a.add(num1, num2);
         }
     }
-    
 }

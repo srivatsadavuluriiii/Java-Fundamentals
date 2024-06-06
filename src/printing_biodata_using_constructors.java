@@ -7,15 +7,17 @@ class biodata {
     String address;
 
     public biodata() {
-        this.address = "";
-        this.id = "";
         this.name = "";
+        this.id = "";
+        this.address = "";
+
     }
 
     public biodata(String name, String id, String address) {
-        this.address = address;
-        this.id = id;
         this.name = name;
+        this.id = id;
+        this.address = address;
+
     }
 }
 
