@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-class volume_finder {
+class cuboid_volume_finder {
     void vol(int l, int b, int h) {
         int volume = l * b * h;
         System.out.print("Volume of a Cuboid : " + volume + " cm3.");
@@ -21,7 +21,7 @@ public class volume_using_methods_and_arguments {
         System.out.print("Enter the height : ");
         int height = object.nextInt();  
 
-        volume_finder volume_object = new volume_finder();
+        cuboid_volume_finder volume_object = new cuboid_volume_finder();
         volume_object.vol(length, breadth, height);
         }
 
