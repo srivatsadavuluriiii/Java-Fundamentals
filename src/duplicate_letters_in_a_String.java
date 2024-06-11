@@ -1,29 +1,30 @@
-/*import java.util.Scanner;
+// Java program to find duplicate letters in a string
+// Sat June 01 2024
 
-public class q6 {
+import java.util.Scanner;
+
+public class duplicate_letters_in_a_String {
     public static void main(String[] args) {
-        Scanner obj = new Scanner(System.in);
-        System.out.print("Enter the string: ");
-        String str = obj.next();
-        obj.close();
-        int len = str.length();
-        char[] chars = str.toCharArray();
-        Arrays.sort(chars);
-        String sortedStr = new String(chars);
-
+        try (Scanner object = new Scanner(System.in)) {
+        System.out.print("Enter a string : ");
+        String string = object.next();
+        int len = string.length();
+        char[] chars = string.toCharArray();
+        
+        for (int p = 0; p < len; p++) {System.out.print(chars[p] + ",");}
+        System.out.println();
+        
         for (int i = 0; i < len; i++) {
             int count = 1;
-            while (i < len - 1 && sortedStr.charAt(i) == sortedStr.charAt(i + 1)) {
-                count++;
-                i++;
+            for (int j = i + 1; j < len; j++) {
+                if (chars[i] == chars[j]) {
+                    count++;
+                    System.out.println("Duplicate letter : " + chars[i] + ", count = " + count);
+                    }
+                }
             }
-            if (count > 1) {
-                System.out.println(sortedStr.charAt(i)
-                                   + ", count = " + count);
-            }
-
+        }
     }
-    }
-}
+}    
 
-*/
+
