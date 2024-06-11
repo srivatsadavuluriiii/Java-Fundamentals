@@ -5,26 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24bc9d87-5869-4433-936b-0e46071713a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Loops.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/armstrong_number_checker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array_reversal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array_sort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/basic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bubble_sort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/matrix_display_and_operations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/palindrome_integer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern_inverse_number_triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern_number_triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/q6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/string_reversal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sum_of_rows_columns_matrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PaySlipGenerationUsingInheritance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ShoppingList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ballot_elections_using_constructors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/result_of_students_using_constructors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;srivatsadavuluriiii&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/srivatsadavuluriiii/Java-Fundamentals.git&quot;,
+    &quot;accountId&quot;: &quot;130069a1-d294-42e7-9881-c65ecac478d0&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -66,6 +64,7 @@
     "Application.patterns.executor": "Run",
     "Application.q5.executor": "Run",
     "Application.q7.executor": "Run",
+    "Application.student_marks_calc.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
@@ -98,6 +97,8 @@
       <updated>1716871408837</updated>
       <workItem from="1716871410003" duration="8839000" />
       <workItem from="1717219715085" duration="739000" />
+      <workItem from="1717513470492" duration="955000" />
+      <workItem from="1717667347654" duration="2292000" />
     </task>
     <servers />
   </component>

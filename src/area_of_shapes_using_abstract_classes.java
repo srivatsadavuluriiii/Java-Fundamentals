@@ -5,37 +5,32 @@ of the classes contains only the method print Area() that prints the area of the
 shape. */
 // Thu June 06, 2024
 
-
 abstract class Shape {
-    int dimension1;
-    int dimension2;
-
-    // Type identifier to determine the shape
+    int a;
+    int b;
     String shapeType;
 
-    Shape(int dimension1, int dimension2, String shapeType) {
-        this.dimension1 = dimension1;
-        this.dimension2 = dimension2;
+    Shape(int a, int b, String shapeType) {
+        this.a = a;
+        this.b = b;
         this.shapeType = shapeType;
     }
 
     void printArea() {
         switch (shapeType) {
-            case "Rectangle":
-                int rectArea = dimension1 * dimension2;
+            case "Rectangle" -> {
+                int rectArea = a * b;
                 System.out.println("Area of Rectangle: " + rectArea);
-                break;
-            case "Triangle":
-                double triArea = 0.5 * dimension1 * dimension2;
+            }
+            case "Triangle" -> {
+                double triArea = 0.5 * a * b;
                 System.out.println("Area of Triangle: " + triArea);
-                break;
-            case "Circle":
-                double circArea = Math.PI * dimension1 * dimension1;
+            }
+            case "Circle" -> {
+                double circArea = 3.14 * a * a;
                 System.out.println("Area of Circle: " + circArea);
-                break;
-            default:
-                System.out.println("Unknown shape type");
-                break;
+            }
+            default -> System.out.println("Unknown shape type");
         }
     }
 }
@@ -54,11 +49,11 @@ class Triangle extends Shape {
 
 class Circle extends Shape {
     Circle(int radius) {
-        super(radius, 0, "Circle"); // dimension2 is not used for Circle
+        super(radius, 0, "Circle"); 
     }
 }
 
-public class Main {
+public class area_of_shapes_using_abstract_classes {
     public static void main(String[] args) {
         Shape rectangle = new Rectangle(10, 20);
         rectangle.printArea();
@@ -70,3 +65,11 @@ public class Main {
         circle.printArea();
     }
 }
+
+
+
+
+
+
+
+

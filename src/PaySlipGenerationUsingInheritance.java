@@ -4,8 +4,7 @@
 /*
 Develop a java application with Employee class with Emp_name, Emp_id, Address,
 mailid and mobile number as members. Inherit the classes, Programmer, Assistant
-Professor, Associate Professor, Professor from employee class. Add Basic pay (BP) as
-the member of all inherited class with 97% of BP as DA, 10% of BP as HRA, 12% of
+Professor, Associate Professor, Professor from employee class with 97% of BP as DA, 10% of BP as HRA, 12% of
 BP as PF and 0.1% of BP for staff club fund. Generate pay slips for the employees with
 their gross and net salary.
  */
@@ -389,6 +388,7 @@ class EmployeeInfo {
         System.out.println("Employee Mobile Number: " + employeeMobileNumber);
         System.out.println("Gross Salary: " + grossSalary);
         System.out.println("Net Salary: " + netSalary);
+        System.out.println("");
     }
 }
 
@@ -418,16 +418,16 @@ class Professor extends EmployeeInfo {
 
 public class PaySlipGenerationUsingInheritance {
     public static void main(String[] args) {
-        Programmer programmer = new Programmer("John Doe", 1, "123 Main St", "john.doe@example.com", 1234567890, 10000);
+        Programmer programmer = new Programmer("A", 1, "abc", "test@test.com", 1234567890, 10000);
         programmer.printSalary();
 
-        AssistantProfessor assistantProfessor = new AssistantProfessor("Jane Smith", 2, "456 Elm St", "jane.smith@example.com", 1234567891, 20000);
+        AssistantProfessor assistantProfessor = new AssistantProfessor("B", 2, "def", "test@test.com", 1234567891, 20000);
         assistantProfessor.printSalary();
 
-        AssociateProfessor associateProfessor = new AssociateProfessor("Robert Brown", 3, "789 Oak St", "robert.brown@example.com", 1234567892, 30000);
+        AssociateProfessor associateProfessor = new AssociateProfessor("C", 3, "ghi", "test@test.com", 1234567892, 30000);
         associateProfessor.printSalary();
 
-        Professor professor = new Professor("Emily Davis", 4, "101 Pine St", "emily.davis@example.com", 1234567893, 50000);
+        Professor professor = new Professor("D", 4, "jkl", "test@test.com", 1234567893, 50000);
         professor.printSalary();
     }
 }

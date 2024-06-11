@@ -1,5 +1,3 @@
-
-
 /*Examination results of 10 students are tabulated as follows:
 Roll no, Subject1, Subject2, Subject3
 
@@ -8,7 +6,6 @@ Write a program to read data and determine the following:
 (b) Highest marks in each subject and the Rollno of the student who secured it.
 (c) The student who obtained the highest total marks. */
 // Thu June 06, 2024
-
 
 import java.util.Scanner;
 
@@ -96,3 +93,6 @@ public class result_of_students_using_constructors {
         }
     }
 }
+
+
+
