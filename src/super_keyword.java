@@ -2,7 +2,7 @@
 // Sun June 01 2024
 
 class Animal {
-    String color = "White";
+    protected  String color = "White";
 }
 
 class Dog extends Animal {
