@@ -148,7 +148,7 @@ public class pay_slip_generation_using_inheritance {
             15507,
             "CP, New Delhi, India",
             "srivatsa.davuluri@vitstudent.ac.in",
-            9873342537,
+            98733,
             200000
         );
         programmer.printSalary();
@@ -158,7 +158,7 @@ public class pay_slip_generation_using_inheritance {
             14457,
             "Pahar Ganj, New Delhi, India",
             "debarghadas.2022@dtu.com",
-            9643800446,
+            96438,
             150000
         );
         assistantProfessor.printSalary();
@@ -168,7 +168,7 @@ public class pay_slip_generation_using_inheritance {
             16678,
             "BSNL Colony, New Delhi, India",
             "utkristg9123@gmail.com",
-            7866891234,
+            78667,
             170000
         );
         associateProfessor.printSalary();
@@ -178,7 +178,7 @@ public class pay_slip_generation_using_inheritance {
             17730,
             "Pari Chowk, Greater Noida, India",
             "parthgupta.mitblr@mitblr.com",
-            7897649376,
+            78976,
             190000
         );
         professor.printSalary();
