@@ -56,3 +56,6 @@ public class course_total_using_interfaces {
         System.out.println("Average : " + object.Average(object.Total()));
     }
 }
+
+
+
