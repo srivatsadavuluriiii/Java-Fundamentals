@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class pattern_number_triangle {
+public class pattern_right_number_triangle {
     public static void main(String[] args) {
         try(Scanner obj = new Scanner(System.in)){
             System.out.print("Enter the no. of rows : ");
@@ -18,3 +18,4 @@ public class pattern_number_triangle {
         }
     }
 }
+

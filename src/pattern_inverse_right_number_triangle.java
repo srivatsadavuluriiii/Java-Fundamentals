@@ -2,7 +2,7 @@
 // Sat June 01 2024
 
 import java.util.Scanner;
-public class pattern_inverse_number_triangle {
+public class pattern_inverse_right_number_triangle {
     public static void main(String[] args) {
         try (Scanner object = new Scanner(System.in)) {
         System.out.print("Enter the number of rows : ");
@@ -18,7 +18,6 @@ public class pattern_inverse_number_triangle {
 
         object.close();
         }
-
     }
 }
 
