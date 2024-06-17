@@ -1,10 +1,9 @@
 //java program to print fibonacci series using do while loop
 // Sat June 01 2024
 
-
-
 import java.util.Scanner;
-public class fibonacci_do_while {
+
+class fibonacci_do_while_loop {
     public static void main(String[] args) {
         try(Scanner object = new Scanner(System.in)){
         System.out.print("Enter the number of terms : ");
