@@ -1,20 +1,6 @@
 //java program to print a left number triangle pattern using for loops
 //practice session
 
-/*
-Algorithm : - for -> i from 1 to num; i++
-            - for -> j = 2(num - i) where j >= 0; j-- for spacings
-            - for -> j from 1 to i for *
-
----------1 -> total length with spacing =  10 ; so for second iteration, j -> 8
--------2-1
------3-2-1
----4-3-2-1
--5-4-3-2-1
-
-
-*/
-
 import java.util.Scanner;
 
 public class pattern_left_number_triangle_for_loop {
