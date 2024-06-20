@@ -10,10 +10,11 @@ public class pattern_equilateral_traingle_for_loop {
             int num = object.nextInt();
 
             for (int i = 0; i < num; i++) {
-                for (int j = 0; j < num - i; j++) { System.out.print(" "); }
+                for (int j = 0; j < num - i - 1; j++) { System.out.print(" "); }
                 for (int j = 0; j <= i; j++) { System.out.print("* "); }
                 System.out.println();
             }
         } catch (Exception e) {System.err.println("error -> program crashed");}
     }
 }
+
