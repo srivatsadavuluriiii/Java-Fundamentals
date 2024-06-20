@@ -24,9 +24,9 @@ public class pattern_left_number_triangle_for_loop {
             System.out.print("Enter the number of rows : ");
             int num = object.nextInt();
 
-            for (int i = 1; i <= num; i++) {
-                for (int j = 2 * (num - i); j >= 0; j--) { System.out.print(" ");} //for spaces
-                for (int j = 1; j <= i; j++) { System.out.print(j + " "); }
+            for (int i = 0; i < num; i++) {
+                for (int j = 2 * (num - i - 1) - 1; j >= 0; j--) { System.out.print(" ");} //for spaces
+                for (int j = 0; j <= i; j++) { System.out.print(j + " "); }
                 System.out.println();
             }
         } catch (Exception e) {
