@@ -1,4 +1,4 @@
-//java program to print a hollow triangle using for loops
+//java program to print a hollow equilateral triangle using for loops
 // Practice - Session
 
 /*
