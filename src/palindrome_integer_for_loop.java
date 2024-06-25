@@ -17,7 +17,7 @@ public class palindrome_integer_for_loop {
                 sum = sum * 10 + rem;
                 num = num / 10;  
             }
-            System.out.println("Reverse of the number is : " + sum);
+            System.out.println(sum);
         }
     }
 }

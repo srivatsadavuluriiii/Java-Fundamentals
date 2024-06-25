@@ -10,7 +10,7 @@ Algorithm - loop : i starts from 2 till num
 
 import java.util.Scanner;
 
-public class prime_numbers {
+public class prime_numbers_using_for_loop {
     public static void main(String[] args) {
         try (Scanner object = new Scanner(System.in);) {
             System.out.print("Enter the number of terms : ");
@@ -29,3 +29,4 @@ public class prime_numbers {
         } catch (Exception e) {System.err.println("error -> program crash");}
     }
 }
+

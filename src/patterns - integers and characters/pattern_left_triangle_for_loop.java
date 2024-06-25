@@ -1,3 +1,6 @@
+//java program to print a left triangle pattern using while loop
+//practice session
+
 import java.util.Scanner;
 
 public class pattern_left_triangle_for_loop {
