@@ -1,0 +1,32 @@
+1. Gives length of a number : 
+        int length = (int) Math.log10(num) + 1;
+    
+    FUNCTIONING : 
+
+    log(1234) = 3.09..
+    log(124) = 2.09..
+    log(123456) = 5.09..
+
+    so,  taking log of an integer gives a constant value = (length - 1).09..
+
+    so for length, we just add 1 to the log(number) and typecast it to
+    int to remove decimal values.
+
+
+
+
+2. Split a number in  half :
+
+eg. 2025 - 20 and 25, so 2025/100 -> remainder = 25, quotient = 20
+How do we get 100 ? 
+    -> 10^(length/2)
+
+        int length = (int) Math.log10(num) + 1;
+        power = (int) Math.pow(10, length/2);
+
+        firstHalf = num / power;
+        secondHalf = num % power;
+
+
+3. For printing any Pattern : 
+

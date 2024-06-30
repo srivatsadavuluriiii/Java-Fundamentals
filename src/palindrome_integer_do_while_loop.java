@@ -12,8 +12,8 @@ public class palindrome_integer_do_while_loop {
 
             do { 
                 rem = num % 10;
-                sum = sum * 10 + rem;
                 num = num / 10;
+                sum = sum * 10 + rem;
             } while (num != 0); System.out.println("Reverse of the number is : " + sum);
         } catch (Exception e) { System.err.println("error -> program crash");}
     }
