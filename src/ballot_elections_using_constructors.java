@@ -1,48 +1,32 @@
-// Java program to count the number of votes for each candidate in an election and the number of spoilt ballots
+// An election contested by 5 candidates. The candidates are numbered from 1 to 5 and the voting is done by marking the candidate number on the ballot paper. Write a program to read the ballots and count the votes cast for each candidate using an array variable count. In case, a number read is outside the range 1 to 5, the ballot should be considered as 'Spoilt Ballot' and the program should also count the number of spoilt ballots.
 // Thu June 06, 2024
-
 
 import java.util.Scanner;
 
-class Election {
-    private final int[] count; 
-    private int spoiltBallots; 
-
-    public Election() {
-        count = new int[5];
-        spoiltBallots = 0; 
-    }
-
-    
-    public void readBallots() {
-        try(Scanner scanner = new Scanner(System.in)){
-        System.out.print("Enter the number of ballots: ");
-        int numBallots = scanner.nextInt();
-
-        System.out.print("Enter the votes (candidate number 1-5): ");
-        for (int i = 0; i < numBallots; i++) {
-            int vote = scanner.nextInt();
-            if (vote >= 1 && vote <= 5) {
-                count[vote - 1]++; 
-            } else {
-                spoiltBallots++;
-            }
-        }
-    }
-    }
-
-
-    public void printResults() {
-        for (int i = 0; i < count.length; i++) {
-            System.out.println("Candidate " + (i + 1) + " received " + count[i] + " votes.");
-        }
-        System.out.println("Number of spoilt ballots: " + spoiltBallots);
-    }
-
+public class ballot_elections_using_constructors {
     public static void main(String[] args) {
-        Election election = new Election();
-        election.readBallots();
-        election.printResults();
+        try (Scanner object = new Scanner(System.in)) {
+            System.out.println("Number is ballots are 5.");
+            int num = 5;
+            int[] count = new int[6];
+            for (int i = 0; i < num; i++) {
+                System.out.print("Enter the ballot you will be voting for : ");
+                int ballot = object.nextInt();
+                if (ballot >= 1 && ballot <= 5) {
+                    count[ballot]++;
+                } else {
+                    count[0]++;
+                }
+            }
+            System.out.println();
+            System.out.println("Results are as follows :");
+            System.out.println();
+            for (int i = 1; i <= 5; i++) {
+                System.out.println("Votes for candidate " + i + " : " + count[i]);
+            }
+            System.out.println();
+            System.out.println("Spoilt Ballots : " + count[0]);
+            object.close();
+        }
     }
 }
-
