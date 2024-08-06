@@ -1,0 +1,195 @@
+Texts : Points to Remember : 
+
+Objects and Non Primitives are stored in Heap Memory
+Primitives are stored in Stack Memory
+
+    SYNTAX : public static void main(String[] args) {}
+    args -> String array which stores data for CLI.
+
+static -> creating methods without creating objects
+void -> return type : returns nothing
+public/ private/ protected -> access modifiers
+
+-----------------------------------------------------------------------------------------------------------------------------
+For traversing a matrix without loops, use the following to return the position of the 
+matrix element ->
+        3x3 matrix : for x cood -> (a - 1) / 3
+                     for y cood -> (a - 1) % 3
+            where a -> input number for the following matrix : 
+                        1 2 3
+                        4 5 6 
+                        7 8 9
+
+eg. a = 3, ans : (1,3)
+-----------------------------------------------------------------------------------------------------------------------------
+
+>> Strings : (Mimics a Char Array -> but cannot use conventional indexing
+                stringObject.charAt(i) instead of stringObject[i] )
+
+>> Everything which starts with a capital letter is a Class
+    ->> String, Scanner,..
+    and we create objects for these classes : 
+    
+    like String name = "xyz", where :  
+        xyz : object stored in the string pool inside the HEAP
+        name : reference variable stored in STACK
+        String : datatype
+
+Why a String Pool ? 
+    makes programs optimised : all reference variable can point to the same object in heap
+-> Also, if the ibject is being changed by one refernce var, it won't be change for the 
+other reference variable, as Strings are (IMMUTABLE) -> for security reasons
+
+Why ? 
+
+    String a = "sri";
+    String b = "sri";
+    a = "dav"
+    sout(a);
+
+    a -> dav
+
+String a = "sri"; -> object sri created and stored in String Pool, and a is initialised and
+                     points to sri
+String b = "sri"; -> b is initialised and also points to sri
+a = "dav" -> new object is created in the pool and a points to dav.
+
+
+
+Comparison of Strings : 
+    > a and b point to the same object "sri" or different object "sri" 
+check by : == or .equals ? 
+
+To create new object for same values : use new keyword
+    String a = "A";
+    String b = new String("A");
+
+for == , ->  { check if reference variables point to same objects }
+    if a and b point to the same object, it will give true
+    if a and b point to different objects, it will give false
+
+for .equals(), -> { checks only values } -> unoptimised method 
+(creates a new object disregaring String Pool optimisation)
+    if a and b point to the same object, it will give true
+    if a and b point to different objects, it will give true
+
+
+String Formatting and Workings : 
+
+> if not being stored anywhere,(directly given to sout -> after shwoing in console, it will be 
+deleted -> garbage management)
+
+    System.out.println('a' + 'b') -> converted to ascii and prints 195
+    System.out.println("a" + "b") -> ab {string concat -> the only operator overloading in java}
+    System.out.print('a' + 1) -> 98
+    System.out.print((char) ('a' + 1)) -> d
+    System.out.println("a" + 'b') -> char is promoted to string : ab
+
+    System.out.print("a" + 1) -> a1
+
+    But when we add a String with a Number, The number (int) is converted to the Wrapper class
+    -> Integer and then calls the method -> toString() and prints a1 : "a" + "1"
+
+    System.out.print(PRIMITIVE + OBJECT) -> if there is an object present, toString() method 
+                                        will be called
+
+    System.out.print("a" + new ArrayList<>()) -> a[]
+
+ >>> NOTE : the operator + is only defined for primitives and Strings 
+        > you cannot do System.out.print(new Integer(56) + new ArrayList<>()) -> error
+    change this to : System.out.print(new Integer(56) + "" + new ArrayList<>())
+
+
+
+>>>> String Operations : create a new object
+
+1. .toCharArray() -> converts a string to a char Array
+    -- >> Arrays.toString(referenceVariable.toCharArray());
+
+2. .toLowerCase() and toUpperCase()
+
+3. .indexOf(i) -> gives index of a char in the string
+
+4. strip() / trim() -> removes whitespaces from leading and trailing edges of a string
+
+5. split() -> spilts the string with an input -> use with Arrays.toString()
+    String name = "Srivatsa Davuluri";
+    sout(Arrays.toString(name.split(" "))); -> ["Srivatsa", "Davuluri"]
+-----------------------------------------------------------------------------------------------------------------------
+
+StringBuilder : mutable sequence of Characters, similar to Strings but are mutable
+ -> Use in situations where Strings are being changed constantly
+ >> require less space compared to String, as it appends changes direclty to the 
+ object instead of creating new objects every time.
+
+        StringBuilder OBJECT = new StringBuilder();
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+1. Gives length of a number : 
+        int length = (int) Math.log10(num) + 1;
+    
+    FUNCTIONING : 
+
+    log(1234) = 3.09..
+    log(124) = 2.09..
+    log(123456) = 5.09..
+
+    so,  taking log of an integer gives a constant value = (length - 1).09..
+
+    so for length, we just add 1 to the log(number) and typecast it to
+    int to remove decimal values.
+
+
+
+
+2. Split a number in  half :
+
+eg. 2025 - 20 and 25, so 2025/100 -> remainder = 25, quotient = 20
+How do we get 100 ? 
+    -> 10^(length/2)
+
+        FUNCTIONING : 
+
+        int length = (int) Math.log10(num) + 1;
+        power = (int) Math.pow(10, length/2);
+
+        firstHalf = num / power;
+        secondHalf = num % power;
+
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Arrays and Looping + Methods 
+
+
+3. Max and Min of an Array :
+    arr = [1, 2, 3, 4, 5]
+
+    > Suppose that the max/ min element is at the zero'th index : maxVal = arr[0] / minVal = arr[0]
+     > run a for loop to check of the iterating elements are either greater or less than 
+    the maxVal / minVal
+
+    if so, maxVal = arr[i]
+
+
+>> edge cases regarding arrays : return -1 : 
+    1. Arrays being null
+    2. for a range, if the starting index > ending index 
+
+
+4. Reversing an Array : 
+
+    arr = [1, 2, 3, 4, 5, 6]
+
+    take a start position as 0 and an end position as arr.length - 1
+    swap start and end till start < end
+
+                while (start < end) {
+                swap(arr, start, end);
+                start++;
+                end--; }
+
+

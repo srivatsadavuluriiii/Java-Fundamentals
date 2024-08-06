@@ -1,0 +1,20 @@
+{
+    "java.debug.settings.onBuildFailureProceed": true,
+    "editor.fontFamily": "Dank Mono",
+    "editor.codeLensFontFamily": "Dank Mono",
+    "editor.experimentalInlineEdit.fontFamily": "Dank Mono",
+    "editor.inlayHints.fontFamily": "Dank Mono",
+    "editor.inlineSuggest.fontFamily": "Dank Mono",
+    "debug.console.fontFamily": "Dank Mono",
+    "scm.inputFontFamily": "Dank Mono",
+    "terminal.integrated.fontFamily": "Dank Mono",
+    "chat.editor.fontFamily": "Dank Mono",
+    "chat.editor.fontWeight": "default",
+    "apc.font.family": "Dank Mono",
+    "apc.monospace.font.family": "Dank Mono",
+    "files.autoSave": "afterDelay",
+    "workbench.fontAliasing": "default",
+    "apc.stylesheet": {
+        
+    }
+}
