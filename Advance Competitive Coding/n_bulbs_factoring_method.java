@@ -8,8 +8,7 @@ public class n_bulbs_factoring_method {
             int count = 0;
             for (int i = 1; i <= num; i++) {
                 for (int j = i; j <= num; j+=i) {
-                    if (arr[j]) { arr[j] = false; }
-                    else { arr[j] = true; }
+                    arr[j] = !arr[j];
                     }
                 }
                 for (int i = 1; i <= num; i++) { if (arr[i] == true){ count++; } }
