@@ -16,5 +16,7 @@
     "workbench.fontAliasing": "default",
     "apc.stylesheet": {
         
-    }
+    },
+    "pieces.cloudCapabilities": "Blended",
+    "pieces.telemetry": true
 }

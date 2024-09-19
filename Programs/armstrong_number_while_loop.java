@@ -10,10 +10,11 @@ public class armstrong_number_while_loop {
             int n = num.nextInt();
             int sum = 0, temp,rem;
             temp = n;
+            int len = (int) Math.log10(n) + 1;
 
             while (n > 0) {
                 rem = n % 10;
-                sum += (int) Math.pow(rem,3);
+                sum += (int) Math.pow(rem,len);
                 n /= 10;
             }
 

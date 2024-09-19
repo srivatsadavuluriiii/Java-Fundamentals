@@ -11,10 +11,11 @@ public class armstrong_number_for_loop {
             int originalNum = num;
             int rem;
             int sum = 0;
+            int len = (int) Math.log10(num) + 1;
 
             for (int i = num; i > 0; i /= 10) {
                 rem = num % 10;
-                sum += (int) Math.pow(rem, 3);
+                sum += (int) Math.pow(rem, len);
                 num /= 10;
             }
 
