@@ -1,4 +1,8 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+
 public class prime_number_queries {
 
     static void queryApproach(List<List<Integer>> queries) {

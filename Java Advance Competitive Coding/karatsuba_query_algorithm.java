@@ -1,4 +1,8 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+
 public class karatsuba_query_algorithm {
     static long karatsuba(long X, long Y) {
         if (X < 10 && Y < 10)

@@ -1,4 +1,8 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+
 public class smallest_prime_factor_spf_query_optimized {
     static void spfQueryApproach(List<List<Integer>> queries) {
         int c = 100000; //constraints : 10^5

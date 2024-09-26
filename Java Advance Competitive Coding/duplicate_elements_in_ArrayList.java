@@ -1,10 +1,14 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.stream.Collectors;
+
 
 public class duplicate_elements_in_ArrayList {
     public static void main(String[] args) {
         //Method 1 : using LinkedHashSet
-        ArrayList<Integer> list1 = new ArrayList<>(Arrays.asList(1,2,3,4,3,4,2,4,5,3,2,1,3));
+        ArrayList<Integer> list1 = new ArrayList<>(Arrays.asList(1,1,2,4,5,3,2,3));
         LinkedHashSet<Integer> listUpdated = new LinkedHashSet<>(list1);
         ArrayList<Integer> listFinal = new ArrayList<>(listUpdated);
         System.out.println(listFinal);
