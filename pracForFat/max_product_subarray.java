@@ -1,4 +1,4 @@
-package pracForFat;
+
 
 public class max_product_subarray {
     static int maxProduct(int[] a) {

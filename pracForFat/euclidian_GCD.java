@@ -1,4 +1,4 @@
-package pracForFat;
+
 
 public class euclidian_GCD {
     static int euclidian(int a, int b) {

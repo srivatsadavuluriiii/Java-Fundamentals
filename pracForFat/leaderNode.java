@@ -1,4 +1,4 @@
-package pracForFat;
+
 
 public class leaderNode {
     static void findingLeaders(int[] arr){

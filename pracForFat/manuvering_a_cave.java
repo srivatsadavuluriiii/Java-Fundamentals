@@ -1,4 +1,4 @@
-package pracForFat;
+
 
 public class manuvering_a_cave {
     static int manuvering(int m, int n) {

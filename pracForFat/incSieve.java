@@ -1,4 +1,4 @@
-package pracForFat;
+
 
 public class incSieve {
     public static void incrementalSieve(int l, int h) {

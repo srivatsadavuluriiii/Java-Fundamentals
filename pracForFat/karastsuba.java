@@ -1,4 +1,4 @@
-package pracForFat;
+
 
 public class karastsuba {
     static int karat(long x, long y){

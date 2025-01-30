@@ -1,4 +1,3 @@
-package pracForFat;
 
 public class equilibriumIndex {
     static int findingequilibrium(int[] arr) {

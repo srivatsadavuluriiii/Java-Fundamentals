@@ -1,4 +1,4 @@
-package pracForFat;
+
 
 public class moveHyphen {
     static String movehyphen(String str) {

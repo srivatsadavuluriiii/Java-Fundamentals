@@ -1,4 +1,4 @@
-package pracForFat;
+
 
 public class majorityElement {
     static int findingMajElement(int[] arr) {

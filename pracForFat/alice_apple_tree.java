@@ -1,4 +1,4 @@
-package pracForFat;
+
 
 import java.util.Scanner;
 

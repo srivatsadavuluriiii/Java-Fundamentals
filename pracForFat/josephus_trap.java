@@ -1,4 +1,4 @@
-package pracForFat;
+
 
 public class josephus_trap {
     static int josephus(int n, int k) {

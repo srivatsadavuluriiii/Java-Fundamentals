@@ -1,4 +1,3 @@
-package pracForFat;
 
 class binaryPalindrome {
 

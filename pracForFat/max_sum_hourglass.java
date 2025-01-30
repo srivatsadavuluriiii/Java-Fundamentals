@@ -1,4 +1,4 @@
-package pracForFat;
+
 
 public class max_sum_hourglass {
     static int maxHGsum(int[][] mat, int R, int C){
